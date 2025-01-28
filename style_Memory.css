@@ -1,0 +1,80 @@
+/* Style global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Titre */
+h1 {
+    color: white;
+    background-color: #2d2d2d;
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+}
+
+/* Grille */
+.grid {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Cartes */
+.card {
+    width: 23%;
+    height: 23%;
+    border-radius: 5px;
+    aspect-ratio: 1;
+}
+
+.card-not-used {
+    background-color: #a0a0a0 !important;
+}
+
+.hidden {
+    display: none;
+}
+
+/* boutons */
+button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+button:focus {
+    outline: none; 
+}
+
+button:active {
+    transform: scale(0.98); 
+}
